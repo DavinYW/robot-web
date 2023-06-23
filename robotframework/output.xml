@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.10 on win32)" generated="20230623 23:48:56.136" rpa="false" schemaversion="3">
+<suite id="s1" name="Login" source="d:\Application\MySkill\robotframework\step\login.robot">
+<test id="s1-t1" name="User Login with valid data" line="33">
+<kw name="Open Browser to WebSauceDemo">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230623 23:48:56.315" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20230623 23:48:56.315" endtime="20230623 23:48:57.790"/>
+</kw>
+<status status="PASS" starttime="20230623 23:48:56.315" endtime="20230623 23:48:57.791"/>
+</kw>
+<kw name="Input Username">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtUsername}</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230623 23:48:57.792" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20230623 23:48:57.791" endtime="20230623 23:48:57.916"/>
+</kw>
+<status status="PASS" starttime="20230623 23:48:57.791" endtime="20230623 23:48:57.916"/>
+</kw>
+<kw name="Input password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230623 23:48:57.918" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20230623 23:48:57.917" endtime="20230623 23:48:57.987"/>
+</kw>
+<status status="PASS" starttime="20230623 23:48:57.917" endtime="20230623 23:48:57.987"/>
+</kw>
+<kw name="Click login button">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btnLogin}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230623 23:48:57.988" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20230623 23:48:57.988" endtime="20230623 23:48:58.058"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230623 23:48:59.063" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230623 23:48:58.058" endtime="20230623 23:48:59.063"/>
+</kw>
+<status status="PASS" starttime="20230623 23:48:57.987" endtime="20230623 23:48:59.063"/>
+</kw>
+<kw name="Verify on Login Page">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230623 23:48:59.075" level="INFO">Current page contains text 'Products'.</msg>
+<status status="PASS" starttime="20230623 23:48:59.064" endtime="20230623 23:48:59.075"/>
+</kw>
+<status status="PASS" starttime="20230623 23:48:59.064" endtime="20230623 23:48:59.075"/>
+</kw>
+<status status="PASS" starttime="20230623 23:48:56.314" endtime="20230623 23:48:59.076"/>
+</test>
+<test id="s1-t2" name="User Login with valid data" line="40">
+<kw name="Open Browser to WebSauceDemo">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230623 23:48:59.079" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20230623 23:48:59.078" endtime="20230623 23:49:00.627"/>
+</kw>
+<status status="PASS" starttime="20230623 23:48:59.078" endtime="20230623 23:49:00.627"/>
+</kw>
+<kw name="Input Invalid Username">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtUsername}</arg>
+<arg>yuhu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230623 23:49:00.629" level="INFO">Typing text 'yuhu' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20230623 23:49:00.628" endtime="20230623 23:49:00.722"/>
+</kw>
+<status status="PASS" starttime="20230623 23:49:00.628" endtime="20230623 23:49:00.723"/>
+</kw>
+<kw name="Input password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230623 23:49:00.725" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20230623 23:49:00.723" endtime="20230623 23:49:00.798"/>
+</kw>
+<status status="PASS" starttime="20230623 23:49:00.723" endtime="20230623 23:49:00.798"/>
+</kw>
+<kw name="Click login button">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btnLogin}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230623 23:49:00.799" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20230623 23:49:00.799" endtime="20230623 23:49:00.855"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230623 23:49:01.867" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230623 23:49:00.855" endtime="20230623 23:49:01.867"/>
+</kw>
+<status status="PASS" starttime="20230623 23:49:00.798" endtime="20230623 23:49:01.867"/>
+</kw>
+<status status="PASS" starttime="20230623 23:48:59.077" endtime="20230623 23:49:01.868"/>
+</test>
+<status status="PASS" starttime="20230623 23:48:56.148" endtime="20230623 23:49:01.869"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230623 23:48:59.077" level="WARN">Multiple tests with name 'User Login with valid data' executed in suite 'Login'.</msg>
+</errors>
+</robot>
